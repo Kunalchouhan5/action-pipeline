@@ -6,6 +6,9 @@ on:
 # on: 
 #   workflow_dispatch: 
 
+env:
+  PROJECT_NAME: GitHubActionsLab
+
 jobs:
   hello-job:
 
@@ -16,17 +19,20 @@ jobs:
       - name: Print Welcome Message
         run: echo "Hello Kunal, Welcome to GitHub Actions"
 
-      - name: Print Date
-        run: date
+      - name: Print Variable
+        run: echo $PROJECT_NAME
 
-      - name: Print Runner Details
-        run: uname -a
+      # - name: Print Date
+      #   run: date
 
-      - name: Step 2
-        run: pwd
+      # - name: Print Runner Details
+      #   run: uname -a
 
-      - name: Step 3
-        run: ls -la
+      # - name: Step 2
+      #   run: pwd
 
-      - name: Step 4
-        run: echo "Pipeline Completed"
+      # - name: Step 3
+      #   run: ls -la
+
+      # - name: Step 4
+      #   run: echo "Pipeline Completed"
