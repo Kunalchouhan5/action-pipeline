@@ -8,6 +8,7 @@ on:
 
 env:
   PROJECT_NAME: GitHubActionsLab
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   hello-job:
@@ -33,6 +34,7 @@ jobs:
 
       - name: Checkout Code
         uses: actions/checkout@v4
+        run: echo "Testing with Node 24"
 
       - name: Show Files
         run: ls -la  
