@@ -1,10 +1,10 @@
 name: My First Workflow
 
-# on:
-#   push:
+on:
+  push:
 
-on: 
-  workflow_dispatch: 
+# on: 
+#   workflow_dispatch: 
 
 jobs:
   hello-job:
@@ -21,3 +21,12 @@ jobs:
 
       - name: Print Runner Details
         run: uname -a
+
+      - name: Step 2
+        run: pwd
+
+      - name: Step 3
+        run: ls -la
+
+      - name: Step 4
+        run: echo "Pipeline Completed"
