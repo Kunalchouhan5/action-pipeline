@@ -36,8 +36,8 @@ jobs:
         uses: actions/checkout@v4
         # run: echo "Testing with Node 24"
 
-      - name: Show Files
-        run: ls -la  
+      # - name: Show Files
+      #   run: ls -la  
         
       # - name: Print Date
       #   run: date
